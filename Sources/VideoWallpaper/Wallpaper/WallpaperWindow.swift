@@ -11,7 +11,7 @@ final class WallpaperWindow: NSWindow {
         )
 
         // 시스템 배경화면(desktop level)보다 한 단계 위, 바탕화면 아이콘(desktop icon level)보다는 아래
-        level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.desktopWindowLevel)) + 1)
+        level = NSWindow.Level(rawValue: Int(CGWindowLevelForKey(.desktopWindow)) + 1)
         collectionBehavior = [.canJoinAllSpaces, .stationary, .ignoresCycle]
 
         isOpaque = true
